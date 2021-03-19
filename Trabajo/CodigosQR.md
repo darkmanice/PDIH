@@ -27,6 +27,8 @@ Existe la versión código QR Micro en la que la simbología se ve reducida y pu
 
 ![plot](./Images/Commons_QR_code.png)
 
+<img src="./Images/MicroQR_Example.png" width="200"/>
+
 ![plot](./Images/MicroQR_Example.png)
 
 La estructura de la matriz se divide en: 
