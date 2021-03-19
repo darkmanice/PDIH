@@ -25,7 +25,7 @@ Además cuentan con capacidad de corrección de errores cuya eficacia se divide 
 
 Existe la versión código QR Micro en la que la simbología se ve reducida y puede representar hasta 35 dígitos o 21 caracteres alfanuméricos.
 
-<p align="center">
+<p margin=100px>
   <figure>
     <img src="./Images/Commons_QR_code.png" width="200"/>
     <figcaption>Código QR</figcaption>
