@@ -27,15 +27,17 @@ Existe la versión código QR Micro en la que la simbología se ve reducida y pu
 
 
   <figure>
-  <p margin=300px>
+  <p align="left">
     <img src="./Images/Commons_QR_code.png" width="200"/>
     <figcaption>Código QR</figcaption>
     </p>
   </figure>
 
   <figure>
+  <p align="right">
     <img src="./Images/MicroQR_Example.png" width="190"/>
     <figcaption>Micro QR</figcaption>
+    </p>
   </figure>
 
 
