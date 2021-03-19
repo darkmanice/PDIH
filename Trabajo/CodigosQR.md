@@ -1,8 +1,8 @@
-#Códigos QR#
-##¿Qué son?##
+# Códigos QR #
+## ¿Qué son? ##
 Los códigos QR son códigos de barras bidimensionales en el que se pueden almacenar datos codificados. 
 
-##¿Cómo se estructuran?##
+## ¿Cómo se estructuran? ##
 La estructura de un código QR es una matriz bidimensional de dos colores contrastados (el más utilizado es blanco y negro) pero permiten cierto nivel de personalización. 
 Existen varias versiones de versiones dependiendo de la cantidad de módulos que forman la matriz (a mayor cantidad de módulos, más información se puede almacenar).
 La máxima capacidad de un código QR varía dependiendo del tipo de información que se almacene:
