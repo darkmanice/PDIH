@@ -35,9 +35,9 @@ La estructura de la matriz se divide en:
 <li>Patrón de posición. Es un patrón que ocupa 3 de las 4 esquinas para conocer la orientación exacta del código y la forma de interpretar la cadena de bits.</li>
 <li>Formato de la informacion. URL, texto, Vcard...</li>
 <li>Patrón de sincronización. Cadena de ceros y unos para poder seguir la alineación del patrón de posición.</li>
-<li>Datos</li>
-<li>Patrón de alineamiento. Identificador extra para conocer la orientación del QR</li>
-<li>Versión</li>
+<li>Datos.</li>
+<li>Patrón de alineamiento. Identificador extra para conocer la orientación del QR.</li>
+<li>Versión.</li>
 </ul>
 
 <p align="center">
