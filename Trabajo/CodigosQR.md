@@ -25,17 +25,19 @@ Además cuentan con capacidad de corrección de errores cuya eficacia se divide 
 
 Existe la versión código QR Micro en la que la simbología se ve reducida y puede representar hasta 35 dígitos o 21 caracteres alfanuméricos.
 
-<p margin=100px>
+
   <figure>
+  <p margin=300px>
     <img src="./Images/Commons_QR_code.png" width="200"/>
     <figcaption>Código QR</figcaption>
+    </p>
   </figure>
 
   <figure>
     <img src="./Images/MicroQR_Example.png" width="190"/>
     <figcaption>Micro QR</figcaption>
   </figure>
-</p>
+
 
 
 La estructura de la matriz se divide en: 
