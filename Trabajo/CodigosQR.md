@@ -22,6 +22,13 @@ Además cuentan con capacidad de corrección de errores cuya eficacia se divide 
 <li>Nivel H. Hasta el 30%</li>
 </ul>
 
+
+Existe la versión código QR Micro en la que la simbología se ve reducida y puede representar hasta 35 dígitos o 21 caracteres alfanuméricos.
+
+![plot](./images/)
+
+![plot](./images/)
+
 La estructura de la matriz se divide en: 
 
 <ul>
@@ -33,4 +40,4 @@ La estructura de la matriz se divide en:
 <li>Versión</li>
 </ul>
 
-Existe la versión código QR Micro en la que la simbología se ve reducida y puede representar hasta 35 dígitos o 21 caracteres alfanuméricos.
+![plot](./images/)
