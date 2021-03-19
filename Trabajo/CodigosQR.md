@@ -40,6 +40,6 @@ La estructura de la matriz se divide en:
 <li>Versión</li>
 </ul>
 
-<p style="center">
+<p align="center">
   <img src="./Images/Código_QR_Ejemplo_de_Estructura.svg" width="500"/>
 </p>
