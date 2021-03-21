@@ -86,7 +86,7 @@ datos = "https://www.google.es"
 archivo = "codigo.png"
 
 #Instanciamos QRCode con la personalización que queramos
-qr = qrcode.QRCode(version=", box-size=15, border=5)
+qr = qrcode.QRCode(version=2, box-size=15, border=5)
 qr.add_data(datos)
 
 #Compilamos los datos a un vector QR
@@ -96,4 +96,58 @@ qr.make()
 imagen = qr.make_image(fill_color="white", back_color="blue")
 
 imagen.save(archivo)
+```
+
+Obtenemos la siguiente imagen como resultado:
+
+<img src="./Images/qr.png" width="200"/>
+
+### Escanear un código QR ###
+Para escanear usaremos opencv. Para empezar leemos la imagen:
+
+```python
+import cv2
+imagen = cv2.imread("qr.png")
+```
+
+Además opencv tiene un detector de códigos QR implementado que nos facilita la tarea:
+
+```python
+#Inicializamos el detector
+detector = cv2.QRCodeDetector()
+
+#Detectamos y decodificamos
+datos, matriz, binario = detector.detectAndDecode(imagen)
+```
+
+*detectAndDecode()* decodifica la imagen y devuelve 3 valores: los datos decodificados, la matriz de vértices del código y el qr binarizado.
+
+```python
+#Si existe codigo QR
+if matriz is not None:
+  print("Datos: " + datos)
+```
+
+Por supuesto se puede escanear usando la webcam:
+
+```python
+import cv2
+
+cap = cv2.VideoCapture(0)
+imagen = cv2.imread("qr.png")
+
+detector = cv2.QRCodeDetector()
+
+while True:
+    _, imagen = cap.read()
+
+    datos, matriz, _ = detector.detectAndDecode(imagen)
+
+    if matriz is not None:
+        print("Datos: " + datos)
+
+    if cv2.waitKey(0) == ord("q"):
+        break
+cap.release()
+
 ```
