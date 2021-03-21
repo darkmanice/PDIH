@@ -43,3 +43,57 @@ La estructura de la matriz se divide en:
 <p align="center">
   <img src="./Images/Código_QR_Ejemplo_de_Estructura.svg" width="500"/>
 </p>
+
+
+## Creación y lectura de códigos QR ##
+Hay gran cantidad de bibliotecas para crear y leer códigos QR en python, pera esta demo usaremos qrcode y opencv. Primero instalamos las bibliotecas correspondientes:
+
+```shell
+pip3 install opcenv-python qrcode numpy
+```
+
+### Generar un código QR ###
+Primero vamos a usar únicamente la biblioteca qrcode:
+
+```python
+import qrcode
+
+#datos a encriptar
+datos = "https://www.google.es"
+
+#Nombre del fichero (codigo qr)
+archivo = "codigo.png"
+
+#Generemos el codigo
+imagen = qrcode.make(datos)
+
+#Guardamos la imagen
+imagen.save(archivo)
+```
+
+Generará una imagen con el nombre "codigo.png" que contiene el código QR con los datos deseados (una URL).
+
+También podemos personalizar el código haciendo uso de qrcode.QRCode() de diversas maneras como especificar el tamaño, el color, control de errores... de la siguiente manera:
+
+```python
+import qrcode
+import numpy as np
+
+#datos a encriptar
+datos = "https://www.google.es"
+
+#Nombre del fichero (codigo qr)
+archivo = "codigo.png"
+
+#Instanciamos QRCode con la personalización que queramos
+qr = qrcode.QRCode(version=", box-size=15, border=5)
+qr.add_data(datos)
+
+#Compilamos los datos a un vector QR
+qr.make()
+
+#Convertimos el vector a una imagen
+imagen = qr.make_image(fill_color="white", back_color="blue")
+
+imagen.save(archivo)
+```
