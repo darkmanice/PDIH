@@ -40,7 +40,7 @@ void setCursorType(int tipo){
         inregs.h.ch = 010;
         inregs.h.cl = 010;
       break;
-      case 2: //Si es gruedo
+      case 2: //Si es grueso
         inregs.h.ch = 000;
         inregs.h.cl = 010;
       break;
