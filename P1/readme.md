@@ -1,19 +1,19 @@
 # Práctica 1 #
 Existen 5 variables globales para almacenar la configuración del programa:
 
-´´´c
+```c
 int invisible = 0;
 int normal = 1;
 int grueso = 2;
 int cfondo = 0;  //Color de fondo
 int ctexto = 0;  //Color del texto
-´´´
+```
 
 Las tres primeras variables se usan para determinar el tipo de cursor.
 
 #### gotoxy ####
 
-´´´c
+```c
 void goToXY(int x, int y){
     union REGS inregs, outregs;
 
@@ -23,11 +23,11 @@ void goToXY(int x, int y){
     inregs.h.dl = y;     //Posicion y
     int86(0x10, &inregs, &outregs);
 }
-´´´
+```
 
 #### setcursortype ####
 
-´´´c
+```c
 void setCursorType(int tipo){
     union REGS inregs, outregs;
 
@@ -49,12 +49,12 @@ void setCursorType(int tipo){
     inregs.h.ah = 0x01;
     int86(0x10, &inregs, &outregs);
 }
-´´´
+```
 
 #### setvideomode ####
 
 
-´´´c
+```c
 void setVideoMode(unsigned char modo){
    union REGS inregs, outregs;
 
@@ -62,11 +62,11 @@ void setVideoMode(unsigned char modo){
    inregs.h.al = modo;
    int86(0x10, &inregs, &outregs);
 }
-´´´
+```
 
 #### getvideomode ####
 
-´´´c
+```c
 int getVideoMode(){
     union REGS inregs, outregs;
 
@@ -74,27 +74,27 @@ int getVideoMode(){
 
     return inregs.h.al;
 }
-´´´
+```
 
 #### textcolor ####
 
-´´´c
+```c
 void textColor(unsigned char color) {
     ctexto = color;
 }
-´´´
+```
 
 #### textbackground ####
 
-´´´c
+```c
 void textBackground(unsigned char color) {
     cfondo = color;
 }
-´´´
+```
 
 #### clrscr ####
 
-´´´c
+```c
 int i;
 void clrscr() {
     union REGS inregs, outregs;
@@ -107,11 +107,11 @@ void clrscr() {
 
     goToXY(0, 0);
 }
-´´´
+```
 
 #### cputchar ####
 
-´´´c
+```c
 void cPutChar(unsigned char c) {
     union REGS inregs, outregs;
 
@@ -123,11 +123,11 @@ void cPutChar(unsigned char c) {
 
     int86(0x10, &inregs, &outregs);
 }
-´´´
+```
 
 #### getche ####
 
-´´´c
+```c
 void getChe() {
     union REGS inregs, outregs;
     int caracter;
@@ -140,4 +140,4 @@ void getChe() {
 
     int86(0x10, &inregs, &outregs);
 }
-´´´
+```
