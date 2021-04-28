@@ -24,6 +24,7 @@ void loop()
   delay(1500); 
 }
 ```
+<img src="./screenshots/semaforo.gif">
 
 # Ejercicio 2 #
 
@@ -52,6 +53,7 @@ void loop()
     }
 }
 ```
+<img src="./screenshots/interruptor.gif">
 
 # Ejercicio opcional: detector de presencia #
 Un led se encenderá cuando un sensor detecte una presencia. Para ello se hace uso de un sensor PIR. Conectamos el led al pin 13 y el sensor al pin 7.
@@ -72,3 +74,5 @@ void loop()
   }
 }
 ```
+
+<img src="./screenshots/sensor.gif">
