@@ -1,0 +1,48 @@
+%!PS
+
+  %%Configuramos el tamaño de la tarjeta
+
+  << /PageSize [840 600] >> setpagedevice
+
+  %%Configuramos la letra
+  /Times-Bold findfont
+  30 scalefont
+  setfont
+
+  %%Escribimos el texto
+  newpath
+  400 400  moveto
+
+  (NOBARA KUGISAKI) show
+
+  %%Configuramos la letra (no queremos negrita)
+  /Times-Roman findfont
+  25 scalefont
+  setfont
+
+  %%Escribimos el texto
+  newpath
+  400 350  moveto
+  (Personaje de anime) show
+  400 320  moveto
+  (Anime: Jujutsu Kaisen) show
+  400 270  moveto
+
+  /Times-Roman findfont
+  20 scalefont
+  setfont
+
+  (Estudio: MAPPA) show
+  400 240  moveto
+  (C/ Direccion inventada, 23) show
+
+  %%Dibujamos la circunferencia
+  200 325 moveto
+  % x y R angI angF
+  200 325 70 0 360 arc
+  0.7 0.2 0.9 setrgbcolor
+  fill
+
+  stroke
+
+showpage
