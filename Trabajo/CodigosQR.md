@@ -49,7 +49,7 @@ La estructura de la matriz se divide en:
 Hay gran cantidad de bibliotecas para crear y leer códigos QR en python, pera esta demo usaremos qrcode y opencv. Primero instalamos las bibliotecas correspondientes:
 
 ```shell
-pip3 install opcenv-python qrcode numpy
+pip3 install opencv-python qrcode numpy
 ```
 
 ### Generar un código QR ###
